@@ -148,7 +148,8 @@ const Form = () => {
                                 color: palette.primary.light
                             }
                         }}
-                        >Don't Have an account? SignUp here.
+                        onClick={() => {navigate("/register")}}>
+                        Don't Have an account? SignUp here.
                         </Typography>
                     </Box>
                 </form>

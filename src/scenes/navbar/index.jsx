@@ -131,7 +131,9 @@ const Navbar = () => {
                     </IconButton>
                     
                 </Typography>
-                <Button onClick={() => dispatch(setLogout())}>
+                <Button onClick={() => {dispatch(setLogout())
+                navigate("/authenticate")
+                }}>
                     Logout
                 </Button>
                 </>) : 
@@ -247,7 +249,9 @@ const Navbar = () => {
                     </IconButton>
                     
                 </Typography>
-                <Button onClick={() => dispatch(setLogout())}>
+                <Button onClick={() => {dispatch(setLogout())
+                navigate("/authenticate")
+                }}>
                     Logout
                 </Button></>) : 
                 (<>

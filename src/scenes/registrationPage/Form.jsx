@@ -172,6 +172,7 @@ const Form = () => {
                                 color: palette.primary.light
                             }
                         }}
+                        onClick={() => {navigate("/authenticate")}}
                         >Already have An Account ? Login Here
                         </Typography>
                     </Box>
