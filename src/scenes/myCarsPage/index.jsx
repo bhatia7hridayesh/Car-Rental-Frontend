@@ -49,7 +49,7 @@ function MyCarsPage() {
     <Box>
       <Navbar/>
       <Box padding="2.5%">
-      <Button padding="0.5rem 1.5rem" variant="contained" >Add Car + </Button>
+      <Button padding="0.5rem 1.5rem" variant="contained" onClick= {() => navigate('/add-vehicle')} >Add Car + </Button>
       </Box>
       
       <FlexBetween
