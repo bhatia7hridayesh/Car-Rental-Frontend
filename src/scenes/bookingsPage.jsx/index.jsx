@@ -53,7 +53,9 @@ function BookingsPage() {
   return (
     <>
     <Navbar />
-    <FlexBetween
+    <Box
+        sx={{display: "flex", flexWrap: "wrap",justifyContent: "space-between",
+          alignItems: "center"}}
         width="95%"
         padding="2.5%"
         gap = "2.5%"
@@ -61,6 +63,7 @@ function BookingsPage() {
         {isNonMobile ? (bookings.map((car) => <Box padding="2%"
             width = "31%"
           backgroundColor={primerylight}
+          sx={{ mb: "2%" }}
           >
                 <Typography>{user.user_type == "User" ? (`Agency : ${car.vehicle.agency}`) : 
                 (`Booked By : ${car.vehicle.booked_by}`)}</Typography>
@@ -76,6 +79,7 @@ function BookingsPage() {
           <Box padding="2.5%"
             width = "45%"
           backgroundColor={primerylight}
+          sx={{ mb: "2%" }}
           >
                 <Typography>{user.user_type == "User" ? (`Agency : ${car.vehicle.agency}`) : 
                 (`Booked By : ${car.vehicle.booked_by}`)}</Typography>
@@ -88,7 +92,7 @@ function BookingsPage() {
                 
           </Box>)
         )}
-        </FlexBetween>
+        </Box>
         </>
   )
 }
