@@ -50,7 +50,9 @@ useEffect(() =>{
     getData();
 } ,[])
   return (
-    <FlexBetween
+    <Box
+        sx={{display: "flex", flexWrap: "wrap",justifyContent: "space-between",
+    alignItems: "center"}}
         width="95%"
         padding="2.5%"
         gap = "2.5%"
@@ -121,7 +123,7 @@ useEffect(() =>{
                  (<></>)}
           </Box>)
         )}
-        </FlexBetween>
+        </Box>
     
     
   )
