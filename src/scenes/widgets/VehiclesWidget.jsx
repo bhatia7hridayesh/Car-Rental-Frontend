@@ -52,12 +52,12 @@ useEffect(() =>{
   return (
     <Box
         sx={{display: "flex", flexWrap: "wrap",justifyContent: "space-between",
-    alignItems: "center"}}
+          alignItems: "center"}}
         width="95%"
         padding="2.5%"
         gap = "2.5%"
         >
-        {isNonMobile ? (vehicles.map((car) => <Box padding="2%"
+        {isNonMobile ? (vehicles.map((car) => <Box padding="2%" mb = "2%"
             width = "31%"
           backgroundColor={primerylight}
           >

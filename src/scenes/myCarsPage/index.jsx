@@ -52,14 +52,16 @@ function MyCarsPage() {
       <Button padding="0.5rem 1.5rem" variant="contained" onClick= {() => navigate('/add-vehicle')} >Add Car + </Button>
       </Box>
       
-      <FlexBetween
+      <Box
+        sx={{display: "flex", flexWrap: "wrap",justifyContent: "space-between",
+          alignItems: "center"}}
         width="95%"
         padding="2.5%"
         gap = "2.5%"
         >
 
       {isNonMobile ? (
-            cars.map((car) => <Box padding="2%"
+            cars.map((car) => <Box padding="2%" mb="2%"
             width = "31%"
           backgroundColor={primerylight}
           >
@@ -70,7 +72,7 @@ function MyCarsPage() {
                 <Button  variant="contained" onClick={() => {handleEdit(car)}}>Edit</Button>
           </Box>)
           
-          ) : ( cars.map((car) =><Box padding="2%"
+          ) : ( cars.map((car) =><Box padding="2%" mb="2%"
             width = "45%"
           backgroundColor={primerylight}
           >
@@ -80,7 +82,7 @@ function MyCarsPage() {
                 <Typography>Booking Status : {car.is_booked ? "Booked" : "Available"}</Typography>
                 <Button variant="contained" onClick={() => {handleEdit(car)}}>Edit</Button>
           </Box>))}
-          </FlexBetween>
+          </Box>
           <Modal
             open={open}
             onClose={handleClose}
