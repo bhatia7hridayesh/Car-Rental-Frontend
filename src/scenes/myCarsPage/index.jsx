@@ -61,7 +61,7 @@ function MyCarsPage() {
         >
 
       {isNonMobile ? (
-            cars.map((car) => <Box padding="2%" mb="2%"
+            cars.map((car) => <Box padding="2%" sx={{ mb: "2%" }}
             width = "31%"
           backgroundColor={primerylight}
           >
@@ -72,7 +72,7 @@ function MyCarsPage() {
                 <Button  variant="contained" onClick={() => {handleEdit(car)}}>Edit</Button>
           </Box>)
           
-          ) : ( cars.map((car) =><Box padding="2%" mb="2%"
+          ) : ( cars.map((car) =><Box padding="2%" sx={{ mb: "2%" }}
             width = "45%"
           backgroundColor={primerylight}
           >

@@ -57,7 +57,7 @@ useEffect(() =>{
         padding="2.5%"
         gap = "2.5%"
         >
-        {isNonMobile ? (vehicles.map((car) => <Box padding="2%" mb = "2%"
+        {isNonMobile ? (vehicles.map((car) => <Box padding="2%" sx={{ mb: "2%" }}
             width = "31%"
           backgroundColor={primerylight}
           >
@@ -94,6 +94,7 @@ useEffect(() =>{
         ) : (vehicles.map((car) =>
           <Box padding="2.5%"
             width = "45%"
+            sx={{ mb: "2%" }}
           backgroundColor={primerylight}
           >
                 <Typography>Agency : {car.agency}</Typography>
