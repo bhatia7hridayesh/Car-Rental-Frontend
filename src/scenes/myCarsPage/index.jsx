@@ -60,7 +60,7 @@ function MyCarsPage() {
 
       {isNonMobile ? (
             cars.map((car) => <Box
-            width = "18%"
+            width = "25%"
           backgroundColor={primerylight}
           >
                 <Typography>VehicleName : {car.Vehicle_model}</Typography>
